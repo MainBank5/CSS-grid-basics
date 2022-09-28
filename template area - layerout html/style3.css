@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2vw;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'navigation article sidebar'
+    'navigation footer footer';
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 80px 2fr 70px;
+    
+}
+
+header, main, nav, aside, footer {
+    background-color: blue;
+    color: white;
+    border: skyblue 1px solid;
+    padding: 20px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: article;
+}
+
+nav {
+    grid-area: navigation;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
